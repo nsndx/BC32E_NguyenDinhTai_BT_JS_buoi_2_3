@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BC32E_NguyenDinhTai_BT_JS_buoi2_3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section id="section">
+        <div class="left">
+            <button onclick="bai1()">
+                <i class="fa fa-book" id="close1"></i>
+                <i class="fa fa-book-open" id="open1"></i>
+                <span>Bài 1</span>
+            </button>
+            <button onclick="bai2()">
+                <i class="fa fa-book" id="close2"></i>
+                <i class="fa fa-book-open" id="open2"></i>
+                <span>Bài 2</span>
+            </button>
+            <button onclick="bai3()">
+                <i class="fa fa-book" id="close3"></i>
+                <i class="fa fa-book-open" id="open3"></i>
+                <span>Bài 3</span>
+            </button>
+            <button onclick="bai4()">
+                <i class="fa fa-book" id="close4"></i>
+                <i class="fa fa-book-open" id="open4"></i>
+                <span>Bài 4</span>
+            </button>
+            <button onclick="bai5()">
+                <i class="fa fa-book" id="close5"></i>
+                <i class="fa fa-book-open" id="open5"></i>
+                <span>Bài 5</span>
+            </button>
+        </div>
+        <div class="right">
+            <div id="bai1" class="animate__animated animate__fadeIn">
+                <h1>Bài 1: Tính tiền lương nhân viên</h1>
+                <input type="number" id="soNgayLam" placeholder="Số ngày làm">
+                <br><button onclick="luongNhanVien()">Tính lương</button>
+                <div class="ketqua">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span id="luongNhanVien"></span>
+                </div>
+            </div>
+            <div id="bai2" class="animate__animated animate__fadeIn">
+                <h1>Bài 2: Tính giá trị trung bình 5 số thực</h1>
+                <input type="number" id="soThuc1" placeholder="Số thực 1">
+                <input type="number" id="soThuc2" placeholder="Số thực 2">
+                <input type="number" id="soThuc3" placeholder="Số thực 3">
+                <input type="number" id="soThuc4" placeholder="Số thực 4">
+                <input type="number" id="soThuc5" placeholder="Số thực 5">
+                <br><button onclick="trungBinhCong()">Tính TBC</button>
+                <div class="ketqua">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span id="trungBinhCong"></span>
+                </div>
+            </div>
+            <div id="bai3" class="animate__animated animate__fadeIn">
+                <h1>Bài 3: Quy đổi tiền</h1>
+                <input type="number" id="tienUSD" placeholder="Nhập tiền USD">
+                <br><button onclick="tienVND()">Tính ra VNĐ</button>
+                <div class="ketqua">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span id="tienVND"></span>
+                </div>
+            </div>
+            <div id="bai4" class="animate__animated animate__fadeIn">
+                <h1>Bài 4: Tính diện tích chu vi hình chữ nhật</h1>
+                <input type="number" id="chieuDai" placeholder="Nhập chiều dài">
+                <input type="number" id="chieuRong" placeholder="Nhập chiều rộng">
+                <br><button onclick="chuViDienTich()">Tính</button>
+                <div class="ketqua">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span id="chuViDienTich"></span>
+                </div>
+            </div>
+            <div id="bai5" class="animate__animated animate__fadeIn">
+                <h1>Bài 5: Tính tổng 2 ký số</h1>
+                <input type="number" id="so2ChuSo" placeholder="Nhập số có 2 chữ số">
+                <br><button onclick="tong2KySo()">Tính</button>
+                <div class="ketqua">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span id="tong2KySo"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
